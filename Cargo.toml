@@ -3,6 +3,7 @@ name = "replay_takeover"
 version = "1.0.0"
 edition = "2021"
 description = "Replay Takeover companion DLL for Arcana Heart 3 LMSS XTEND + Angel v9"
+license = "MIT"
 publish = false
 
 [lib]

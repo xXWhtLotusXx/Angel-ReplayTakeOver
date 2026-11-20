@@ -105,3 +105,7 @@ cargo build --release
 ```
 
 Output: `target\i686-pc-windows-msvc\release\replay_takeover.dll`, installed as `xinput1_3.dll`.
+
+## License
+
+[MIT](LICENSE). Replay Takeover contains no code from Angel or the game; it requires your own copies of both.
