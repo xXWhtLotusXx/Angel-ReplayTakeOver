@@ -7,9 +7,10 @@ This is a companion to the [Angel](https://github.com/super-continent/Angel) mod
 ## Install
 
 1. Install Angel v9 as usual (`dinput8.dll` in the game folder).
-2. Download `xinput1_3.dll` from the [latest release](https://github.com/americoperez49/Angel-ReplayTakeOver/releases/latest) and copy it into the game folder:
+2. Apply a Large Address Awareness patch to `AALib.exe`, as Angel recommends to prevent rare crashes when loading into a match. For example, run [4GB Patch](https://ntcore.com/4gb-patch/) on `AALib.exe` (it keeps a backup, `AALib.exe.Backup`). Replay Takeover works with both the patched and the unpatched game.
+3. Download `xinput1_3.dll` from the [latest release](https://github.com/americoperez49/Angel-ReplayTakeOver/releases/latest) and copy it into the game folder:
    `...\steamapps\common\ArcanaHeart3LMSS\`
-3. Start the game. On first launch `replay_takeover.ini` is created next to the game.
+4. Start the game. On first launch `replay_takeover.ini` is created next to the game.
 
 If the game or Angel isn't the exact supported version, a message says so and the mod stays inactive; the game and Angel run normally.
 
