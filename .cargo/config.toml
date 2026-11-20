@@ -1,0 +1,7 @@
+[build]
+# The game (AALib.exe) is a 32-bit process.
+target = "i686-pc-windows-msvc"
+
+[target.i686-pc-windows-msvc]
+# Link the C runtime statically so the DLL has no extra runtime dependencies.
+rustflags = ["-C", "target-feature=+crt-static"]

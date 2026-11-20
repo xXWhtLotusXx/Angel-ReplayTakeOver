@@ -1,0 +1,31 @@
+[package]
+name = "replay_takeover"
+version = "1.0.0"
+edition = "2021"
+description = "Replay Takeover companion DLL for Arcana Heart 3 LMSS XTEND + Angel v9"
+publish = false
+
+[lib]
+# Built as xinput1_3.dll (see build.rs) so the game loads it from its own folder.
+crate-type = ["cdylib"]
+
+[dependencies]
+# Same detour library Angel uses; RawDetour works on stable Rust (no nightly features).
+retour = { version = "=0.4.0-alpha.4", default-features = false }
+sha2 = "0.10"
+windows-sys = { version = "0.59", features = [
+    "Win32_Foundation",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Memory",
+    "Win32_System_Performance",
+    "Win32_System_SystemInformation",
+    "Win32_System_SystemServices",
+    "Win32_System_Threading",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_WindowsAndMessaging",
+] }
+
+[profile.release]
+panic = "abort"
+lto = true
+codegen-units = 1
